@@ -9,6 +9,12 @@
   			// item: the value the user entered into the #item input (hint: use the val() method)
   			// cost: the cost the user entered into the #cost input (hint: use the val() method)
   // c) Get HTML from #groceryItem template and store it in a variable called source
+  var source = $("#entry-template").html();
   // d) Use Handlebars.compile() to compile the source template and store in a variable called template.
+  var template = Handlebars.compile(source);
   // e) Use template() to add the userInput to the template and store in a variable called newListItemHTML
+  var newListItemHTML = template += userInput;
   // f) Append newListItemHTML to the .groceries list
+  $(.groceries).append(newListItemHTML)
+
+
