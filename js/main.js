@@ -8,9 +8,8 @@
 $('form').on('submit', function(event) {
   event.preventDefault();
 
-
-  var userInput = {
-    item: $('#item').val()
+   var userInput = {
+    item: $('#item').val(),
     cost: $('#cost').val()
   }// b) Create an object called userInput. There should be two key/value pairs in the object:
         // item: the value the user entered into the #item input (hint: use the val() method)
